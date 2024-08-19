@@ -1,0 +1,608 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{parskip} % For paragraph indentation and spacing
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+\usepackage[x11names]{xcolor}
+\usepackage[absolute]{textpos}
+
+\setmainfont{Garamond}
+
+\graphicspath{ {./images/} }
+
+\hypersetup{
+  colorlinks=false,
+}
+
+\setlength\itemsep{-0.5em}
+
+\newcommand\cvtitle[2]{\Huge{\bf{#1}} \Huge{#2}}
+\newcommand\cvcontact[3] {
+  \small {
+    \faAt \quad \href{mailto:#1}{#1} \\
+    \faPhone \quad \href{tel:#2}{#2} \\
+    \faLinkedin \quad {\href{https://www.linkedin.com/in/shobanj/}{#3}}
+  }
+}
+
+\newcommand\cvhrule{{\color{gray}\hrule}}
+\newcommand\cveducation[4]{
+
+  \normalfont\bf{#1, #2}
+
+  \normalfont\small{#3 (#4)}
+}
+
+\newcommand\ytl[2]{
+  \parbox[b]{3em}{
+    \hfill{\color{gray}\bfseries\small{#1}}~$\cdots$~
+  }
+  \makebox[0pt][c]{$\bullet$}\vrule\quad \parbox[c]{5cm}{
+    \vspace{5pt}\raggedright\color{black} \small{#2}.\\[7pt]}\\[-3pt]
+}
+
+\newcommand\cvte[2]{\small{\textbf{#1}} ~$\cdots$~ & \small{#2}}
+
+\newcommand\cvsubsection[3]{\subsection*{#1 \quad \small{(#2 \textendash #3)}}}
+\newcommand\cvprojectentry[5]{
+  \bf{#1}
+  
+  \normalfont{\it{Client: #2}\normalfont{} \quad (#3 \textendash #4)}
+  
+}
+
+\begin{document}
+
+\begin{minipage}[b]{.7\linewidth}
+  \cvtitle{Shoban}{Jayaraj}
+\end{minipage}
+\begin{minipage}[b]{.3\linewidth}
+  \cvcontact{shobanj@hcltech.com}{+91-98401-46057}{shobanj}
+\end{minipage}
+
+\cvhrule
+
+Have been with the IT industry since June '95 with almost thirty years
+in architecting and managing multiple projects and functions in
+domains like printing, semiconductor, telecom, automation, industrial,
+and workflow in addition to focusing on the quality aspects of project
+development.
+
+\section*{Professional Experience}
+
+{
+\begin{wraptable}{r}{6cm}
+  \caption{Timeline}
+  \begin{tabular}{l|p{4cm}}
+    \hline
+    \cvte{2024}{Drove and achieved 150\% Value add and SixSigma initiative targets} \\
+    \cvte{2022}{Devloped R / Python based  Knowledge Management Capability assessment and analysis tool - recognized as a SixSigma project \par \href{https://patents.google.com/patent/US20230289515A1}{US20230289515A1} Patent published} \\
+    \cvte{2021}{Prototyped 3D / AR app - enabled winning an AR application dev contract} \\
+    \cvte{2020}{CMMI Associate - Took part in CMMI assessment and achieved Level 5 for group} \\
+    \cvte{2019}{\href{https://patents.google.com/patent/US20190294385A1}{US20190294385A1} - Patent published} \\
+    \cvte{2017}{Poster presentation for TUG \textendash `Application of Big Data Analytics in the ATE domain'} \\
+    \cvte{2015}{} \\
+    \cvte{2014}{SME for OOAD UML, Design Patterns \textendash Trained over 500 members (>250 hrs.) since 2008} \\
+    \cvte{2010}{} \\
+    \cvte{2001}{ezTest prototyped as a personal initiative and became a line of business} \\
+    \cvte{2000}{} \\
+    \cvte{1998}{Developed a proxy server for shared internet browsing using Java used withn org} \\
+    \cvte{1995}{} \\
+  \end{tabular}
+\end{wraptable}
+
+\cvsubsection{HCL Technologies, Chennai}{Dec 2002}{Till date}
+
+Excensively managed programs and technically contributed on the Office Automation (Office \& Production Devices), Semiconductor (ATEs, Ball bonders) and Industrial (Frequency Convertors) domains.
+
+\cvprojectentry{Software Development Support}{Leading Semi OEM}{Jan 2024}{Till date}
+
+Group manager managing over 110 members placed at multiple locations
+covering QA and SW development for multiple divisions spanning India
+(Chennai, Bengaluru), US and Canada. Have been responsible for
+handling the operational aspects of running the project covering
+forecast, billing, fulfillment and customer connect.
+
+\cvprojectentry{Digital Software Solutions}{US based Office Automation OEM}{Jun 2017}{Dec 2023}
+
+Served as the lead for multiple tracks spanning 45 – 65 members
+covering multiple programs including printer drivers, sustenance and
+enhamcement of a content management system, web based logs aquisition
+and analyze tool for fault diagnostics, LIDAR based app for AI model
+training and inference, AR / VR app that used object and state
+detection to guide a new user to perform periodic maintenance
+activities, enterprise / clould based print solutions, iterations of a
+public print kiosk, a playstore equivalent for printers and associated
+QA teams. My responsibilities include guiding the team, managing
+customer connect, handle contract and commercials, people management
+and supported the team on the architectural and design decisions.
+
+Key achievements were – front-ended the Six sigma initiative for the
+account by tracking targets, interacting with the respective SPOCs,
+coordinating trainings etc., encouraged and filtered ideas for patent
+filing and helped the team submit quality ideas for the group and
+improved the selection ratio by 70\% (of which I was the primary
+applicant for 3 ideas, being finalized for publication with
+USPTO). In addition, I also identified and guided on evaluating new
+concepts on emerging technologies such as AI / ML, AR (Hands free AR,
+Synthetic image generation), NLP etc.,
+
+}
+
+\cvprojectentry{ATE Instruments Program}{US based Office Automation OEM}{Jun 2017}{Dec 2018}
+
+Served as the group manager for the software design and development of
+components covering AC, DC, RF instruments and supported the team
+technically as well as taking care of customer connect, commercials as
+well as team management.
+  
+Started as a team of 4 members working for a single instrument, was
+able to grow this to ~17 members spanning six different instrument and
+support projects. Consistently scored a 7/7 on the customer
+satisfaction survey for all the projects. We also started the
+‘instrument incubation program’ to scale up both new joiners and
+lateral hires by focusing on imparting practical knowledge to
+instrument development for faster deployment. Was also instrumental in
+identifying optimization areas to replicate the knowledge gained in
+one instrument and helped in improving productivity on future
+products.
+
+\cvprojectentry{64 bit Migration}{US based Office Automation OEM}{Feb 2016}{Jun 2017}
+
+Served as the program manager interacting with the different groups at
+the client side to migrate the existing ATE SW application (12M LOC)
+from 32 bit to 64 bit to bridge the 4GB RAM limit. Supported in
+porting the software from obsolete technology, evaluated 3rd party
+components and recommended replacements, conducted performance
+evaluation and implemented optimizations while running in the 64 bit
+environment, validated all features against the requirements and
+ensured conformance to both the 32 bit and 64 bit environment and
+support end-user issues during alpha and beta testing and final
+release.
+ 
+The program consisted of over 20 members from the software team
+interacting with equal number of engineers from the client
+organization and SV of similar strength located in three different
+geographical locations and time zones. Was responsible for
+coordination, tracking of the milestones and progress, identifying and
+evaluating risks, productivity measurements and actions, reporting to
+different levels of sr. management on the progress and challenges. We
+had completed the program successfully 2 weeks ahead of schedule. This
+was recognized and awarded as a best project executed at this scale
+within the group.
+
+\cvprojectentry{VLT Insight}{Leading Europena Industrial / Power Electronics OEM}{Aug 2011}{Feb 2015}
+
+Served as the architect for designing the PC Software framework, built
+to extensible and portable to help the client create new software
+application. The framework allowed for a service-oriented-architecture
+with C++ as the backend and Adobe AIR as the frontend. The VLT Insight
+is one realization of the framework which we designed to manage motor
+control devices.
+ 
+The application featured as NUI based GUI with focus on robustness and
+performance (faster and able to handle more number of devices
+simultaneously compared to the older version). This started as a team
+of 4 members when the requirements were analyzed and grew to ~40
+members from different functions (Testing, automation, UxD)
+collaborating using Agile Scrum. Initially functioned as a technical
+manager / architect and as the team grew, primarily focused on the
+technical aspects of the project.
+
+\cvprojectentry{Production Print and Office Simulator}{Leading Japanese Printer OEM}{Apr 2009}{Jul 2011}
+ 
+Responsible for developing projects for Konica Minolta Software
+Laboratories (the QA department) which aided in improving the
+efficiency (man power, cost, time reduction), of the QA people
+deployed by Konica Minolta. This included developing simulators (for
+Production, Office Printers), test automation framework (to test MIB,
+WebServices capabilities of the printer) using C++, Qt on Windows and
+porting Windows based simulators to Linux.
+ 
+We have shown an improvement of 17\% over manual testing process and
+increased test coverage to 14.7 times of original.
+ 
+The program consisted of multiple teams / projects totaling strength
+of 18 to 8 members working off India and Japan. I am responsible for
+customer connect, financials and overall team management (estimation,
+tracking, performance evaluation, corrective actions, improvements
+etc).
+ 
+\cvprojectentry{Digital Development Support}{Semiconductors / ATE}{Jan 2009}{Mar 2009}
+ 
+Providing development and sustenance support for High Speed Memory (Umbra HSM) capabilities scheduled for the release of the latest version of tester software. This consists of two sub-projects involving sustenance covering Timing, MTO and pattern areas targeting the 7.20 ship date and auto-test failure resolution for the 9.80.03 (Umbra Development branch) for the HSM capability. 
+ 
+Am responsible for a team of 7 members, managing the projects and serving as the client interface for the project. 
+ 
+\cvprojectentry{Checkers Maintenance}{Semiconductors / ATE}{Feb 2008}{Dec 2008}
+
+The Test Development Engineering (TDE) Indian team is responsible for
+the maintenance programs for the Flex, UltraFLEX, and J750 testers, as
+well as developing new test programs and tools.
+ 
+TDE team's responsibility is to assist Teradyne in:
+
+Sustaining Released TDE instrument software.  This includes Checker, PV, Test process, and related tools for DC and AC instruments
+
+Sustaining of the Maintenance Environment; including Maintenance User Interface (MUI), Test Process Manager (TPM) and related tools
+
+SQA
+
+Manage and maintain the J750 Maintenance
+
+New Checker and PV Development 
+ 
+The team has been able to perform well above the stipulated
+productivity goals in sustaining the software and has constantly been
+revising its goals, the last being a 10\% increase over the last
+productivity figures.
+ 
+My responsibility is to manage the team of 11 - 8 members, maintain
+customer connect, handle contractual activities like generating SOWs,
+billing, monitor the performance of the team and suggest improvement
+initiatives.
+ 
+\cvprojectentry{Application Shmoo}{Semiconductors / AT}{Jan 2007}{Nov 2008}
+
+Shmoo plots are graphical charts that display the response of
+electrical components or systems by varying a range of conditions and
+inputs like voltage, amplitude, current etc. This is used to observe
+the operating ranges of a device.
+ 
+Am responsible for managing a team of two to implement the plotting
+capability. We are responsible for designing, coding, testing and
+verification of the various generations of the application.
+ 
+\cvprojectentry{Analog Tools Program}{Semiconductors / ATE}{Mar 2006}{Nov 2008}
+
+This program involved the team to provide development support and sustenance of all analog tools of Teradyne’s Flex and UltraFlex testers. This involved the team to develop:  
+ 
+A tool (Code Producing Debug Display) to monitor changes made to the various instrument debug displays and provide VBA code generation to allow end users to ‘replay’ the changes at a later point of time. The tool supported over 32 different instruments spanning Flex and UltraFlex. 
+A signals and PSet (parameter set) editor that allowed the user to define signals using a GUI and program them to the hardware or re-read them and compare them with an existing set. 
+The Characterization Editor that allowed the user to graphically create characterization schematics to test a device, execute the tests and visualize them as a ‘Shmoo’ plot. 
+The Tester State Service which provide parametric enumeration support of instrument capabilities which can be queried programmatically. It also provided support for a wizard to generate scaffolding code in DotNet to enable parametric support for new instruments. 
+Porting a few capabilities from UltraFlex to Flex which includes: 
+A centralized pin viewer which depicts the pin state and is used to provide a holistic view to the test engineer while debugging a test program 
+Ability to conduct measurements against a set of limits that were accessible through a programmable interface, but now configurable via the UI. 
+ 
+The development tools were based on various Microsoft technologies
+like DotNet (C\#, VB.NET), VB, COM, VC++ and VBA.
+ 
+My responsibility was to manage the specified programs with the team
+varying from 3 to 12 engineers, serving as the single point of contact
+to the customer, collaborating with other functions like software
+verification and test team, automation team and the process compliance
+team. I had also contributed technically in most of the projects.
+ 
+Significant achievements:  
+Awarded 5/5 on customer satisfaction for the CPDD (DotNet) migration 
+Awarded the HCL GoldLine award for successful completion of the CPDD program.  
+Was appreciated by the client on my ideas and initiatives of creating reusable components, thus saving time in their future projects 
+ 
+\cvprojectentry{HVD, HDVS and Microwave – Autotest Development and Ownership}{Semiconductors / ATE}{September 2004}{September 2006}
+
+The High Voltage Digital, High Density Voltage Source and Microwave
+are instruments that plug into the Teradyne suite of automated test
+equipments designed to test devices. The instrument’s features are
+exercised by 75+ auto-tests. This project involved us to own all
+auto-tests which include development of new auto-tests using VBA,
+Perl, C++/COM and CPPUnit to test the features of the instrument,
+extending existing tests for cover new features and monitoring and
+resolving auto-test failures related to HVD. We had also fixed a few
+defects in the HVD component.
+ 
+My responsibility within the team is to plan, schedule and manage the
+team of four for development and sustenance of auto-tests. In addition
+to management, I am also responsible for process compliance and
+contributing to the technical aspects of development.
+ 
+\cvprojectentry{GUI Decoupling}{Semiconductors / Wire bonding}{October 2003}{September 2004}
+
+This project refactors the wire bonder tool by decoupling the domain
+specific workflow from UI related activities using the MVC
+approach. The goal of the project is to improve developer
+productivity, enable split development teams to work on the GUI and
+the application and provide a migration path to move to Windows XPE
+and .NET from vxWorks and X/Motif. With major feature enhancements
+happening in parallel, we chose to use an iterative approach that
+incorporates incremental features.
+ 
+My role in this project was to help recommend the architecture,
+estimate, plan, architect and collaborate with the various teams in
+realizing the design. I also managed a team of four to complete the
+code communication framework using C++, Visual C++, vxWorks.
+ 
+\cvprojectentry{Distributed Material Handling System}{Semiconductors / Wire bonding}{January 2003}{October 2003}
+
+The Distributed Material handling system is a new feature request to
+the wire bonder suite of tools developed by Kulicke and Soffa
+Industries that aims to move away from the proprietary VME bus to off
+the shelf PC based systems via Ethernet. It allows multiple
+distributed modules that can be connected to the bonder tool. Each
+module is responsible for controlling a specific set of devices like
+sensors, steppers and solenoids. The project also implemented a custom
+distributed shared memory component to allow the components to talk
+with each other.
+ 
+The project was developed using vxWorks on the x86 platform with the
+target being a stepper controller running on the Blackfin series of
+DSP processors by Analog devices. The stepper board was connected to
+the sensor and solenoids via a SPI bus. The project involved
+implementing a messaging layer between the host and the target in C++
+and a distributed shared memory component that was used by the host
+and the target to send stepper commands.
+ 
+Was responsible for architecting the host part of the system using
+OOAD, Rational Rose and UML. Initially, the messaging layer was built
+on VC++ using POSIX and was later migrated to vxWorks. I managed a
+team of four members to implement the host part of the software. I was
+also responsible for providing on-site training and transition to the
+members of the Singapore KnS division
+
+\cvsubsection{Think Business Networks, Coimbatore}{Aug 1997}{Dec 2002}
+
+\cvprojectentry{Digital Nervous System}{Process Workflow}{September 2002}{December 2002}
+ 
+Managed the DNS project, a workflow automation framework that allows
+IT related processes to be automated. It aims at reducing the
+productivity dip that is caused by following the manual process by
+handholding the users on what needs to be done and how. Users can
+interactively model processes via activity diagrams, deploy them for
+instantiation, map the processes to the various KPAs defined by SEI
+CMM (for internal assessment), extract quality metrics etc.
+ 
+My responsibilities were to manage a team of eight members and
+incorporate functionalities like CVS support for document archival,
+conditional branching and joining of activities within processes etc.
+ 
+DNS was implemented on the .NET platform. 
+ 
+\cvprojectentry{Test Automation Layer}{Test Automation}{August 2002}{December 2002}
+
+ 
+Functioned as an architect to design and validate the Test Automation
+Layer (TAL) that allowed producing faster automation solutions by
+providing functional automation management and deployment tools on top
+of existing automation frameworks. TAL employs various test automation
+methodologies like CSDDT (Continuous Synchronized Data Driven
+Testing), Action / keyword driven testing to provide effective test
+automation solutions.
+ 
+\cvprojectentry{Real-time Fault Receiver}{Telecom / Networking}{Mar 2002}{July 2002}
+
+ 
+Designed the system and managed a team of four for the project:
+`Real-time Fault Receiver', a component add-on to our product, `Think
+EMS' to provide the capability to minimize SNMP based trap loss by
+providing a real-time solution using RTJ specs.
+ 
+This highly configurable system functions as a real-time component
+running on TimeSys Linux/GPL with Real-time Java extensions to capture
+UDP based SNMP traps and relay them back to the EMS for event
+correlation and consolidation. The RFR implements its own high
+performance customized persistence engine and provides a 20x
+performance boost in handling SNMP TRAPS compared to the current EMS
+implementation.
+ 
+\cvprojectentry{EzTest}{Internet / Web}{July 2001}{September 2002}
+
+ 
+Was responsible for the architecture and management of the EzTest
+project, a part of the Enterprise / University Information Portal
+project (E/UIP). EzTest features automated evaluation of candidates on
+selected skill sets aiding in recruitment and training
+assessment. EzTest used open-sourced software to reduce the cost of
+the product.
+ 
+The assessment engine was marketed towards the educational, corporate
+and IT enabled services (call centers) segments. Incidentally, the
+assessment engine was started by myself as a personal initiative to
+help us with our recruitment efforts and was eventually adopted by our
+organization. The product was completed with a team of three members.
+ 
+\cvprojectentry{Nuera EMS}{Telecom / Networking}{June 2000}{July 2001}
+
+ 
+Was one of the key members involved in the design and development of
+an EMS for managing and monitoring Remote Digital Terminals (RDT)
+manufactured by Nuera Communication Inc, CA, USA, for their customers
+AT\&T. The EMS was designed to manage Fault, Configuration, Performance
+and Security (FCAPS) of the system. The RDT was responsible for
+enabling IP based voice and data communication within cable TV
+networks and interfaces with the external PSTN.
+ 
+Was responsible for the design and managed a team of three to
+implement the Fault, Performance and Diagnostics servers for the
+system. The servers were based on a pluggable architecture supporting
+SNMP southbound and with northbound capabilities to talk to
+higher-level managers (like HP OpenView) via SNMP, RMI or e-mail.
+ 
+\cvprojectentry{zGenie}{Internet / Web}{October 1999}{October 2000}
+
+Zgenie is a web community based information sharing tool that brings
+content to your desktop rather than wade through millions of
+non-relevant information available in the web.
+ 
+Was one of the key architects of the system and managed the client
+side implementation of the application with a team of four. The client
+side implementation consisted of building COM based plug-in to
+Internet Explorer, a lightweight proxy server and a binary
+interception engine that allows the users to `Alt+Click' on any text
+in any GUI based application and use it as a base to pull information
+off the web. The application also supported the capability to update
+itself over the web. The product entered beta with 300+ users using
+the application. The product was developed with Microsoft Visual C++
+6, with MFC and COM.
+ 
+The application suite was used to power our knowledge management tool
+`ezInfo' on the client side.
+ 
+\cvprojectentry{WorldStreet Sales}{Securities / Financial}{August 1998}{September 1999}
+
+ 
+WorldStreet Sales is a financial portal for the securities industry,
+capable of consolidating external information like stock quotes, news
+feeds, research articles from various sources like IDC, Reuters in
+real-time, there by allowing sales persons to provide timely advice to
+their clients.
+ 
+My job, as a consultant was to analyze the performance of the system,
+identify the shortcomings and overcome the performance issues with
+better solutions. This involved developing solutions that required
+parallel generation of presentation data for portlets, dynamic caches
+to manage real-time quotes and database optimizations.
+ 
+Was responsible for bringing back two projects to be developed
+offshore, one being a chart server capable of plotting financial
+charts using pricing information obtained from data-feeds maintained
+by Reuters and IDC. The other is responsible for uploading external
+IDC data-feeds into our database.
+ 
+These projects made extensive usage of Java, RMI, JNI, and JDBC to
+achieve its goals.
+ 
+\cvprojectentry{NetExpress}{Telecom / Networking}{August 1997}{August 1998}
+
+ 
+NetExpress is a 3-tired distributed system on Windows NT, for the
+management of complex services on Nortel’s DMS 100 switches. Basically
+the system is responsible for service provisioning (Service Management
+System) in the DMS 100 switches and also acts as Operations Support
+Systems for the service providers. The system consists of thin clients
+spread across a WAN, being serviced by our set of server applications
+running on NT server with a backend ORACLE database. This system was
+developed entirely in Visual C++ involving rule based, network
+modeling and limited object database implementation.
+ 
+Ceon (formally known as FirstTel systems) developed NetExpress for
+some of the largest Telcos in the world (Telstra, British Telecom and
+etc.).
+ 
+Developed ASUBS (Automatic Service Unit Billing System), a billing
+system for the features (around 190 features) provided to customers in
+the DMS 100 switch. There was no proper system to produce the billing
+for the DMS 100 switches and this is the very first system that
+generated accurate feature based billing for DMS 100 switches. ASUBS
+is a rule-based system that features capabilities to add new billing
+requirements and modify the existing rule without changing the
+application.
+ 
+Was also responsible for managing a team of seven for a feature point
+release of NetExpress.
+
+
+\cvsubsection{L-Cube Innovative Solutions, Chennai}{Jun 1995}{Aug 1997}
+
+\cvprojectentry{Electronic Service Manual}{Document Publishing}{Jun 1995}{Aug 1997}
+
+ 
+The Electronic Service Manual (ESM) helps in providing quick access of
+digitized documents to service personnel in troubleshooting complex
+machineries. It featured network decision trees to aid the personnel
+in zeroing on the problem, dynamic forms to report problems, an
+internal scripting framework, with support for rendering various types
+of documents like RFT, WordPerfect Documents, SGML and HTML. The ESM
+works as a standalone application and is also capable of collaborating
+with other users over the network. The latest incarnation was capable
+of generating Internet ready manuals dynamically for access over the
+web. The ESM was developed using C++.
+ 
+I functioned as a software engineer, responsible for implementing a
+display renderer capable of rendering complex documents with supports
+for tables, columns etc. Was also responsible for developing the
+web-rendering engine that exports regular word processing documents as
+HTML to be accessible over the net.
+ 
+I was also responsible for building the entire automated test
+framework, based on MS Test, an early version of Rational Visual Test.
+
+\section*{Education}
+
+\cveducation{M.S.}{Software Systems}{BITS Pilani}{CGPA 7.94}
+\cveducation{B.E.}{Computer Science}{Barathiar University}{74.77\%}
+
+\section*{Other Achievements}
+
+\lipsum
+
+\begin{itemize}
+  \item{\bf{HCL Technologies}}
+    
+    \begin{itemize}
+      \setlength\itemsep{-0.5em}
+      \item Authored the paper `Application of Big Data Analytics in
+        the ATE domain' which was selected for poster presentation as
+        part of the ATE user meet up (2017)
+      \item Published a paper on `Big data analytics' in the internal
+        newsletter
+
+      \item Created proof of concept application on auto-test
+        regression analysis using the ELK (Elasticsearch, Logstash and
+        Kibana) stack which led to the focus of extending the same
+        within the group for different projects for analysis.
+
+      \item Best project award (2) for execution and completion of
+        projects within the semi group (2016 – 2017)
+
+      \item Awarded the HCL Goldline award (2) for a 5/5 Customer
+        Satisfaction rating and the successful completion of the CPDD
+        program (2012)
+
+      \item A paper on `Machine Learning' was shortlisted as part of
+        the internal paper presentation contest within the group
+
+      \item TechCeed Certified Trainer (HCL Training Department) for
+        OOAD / UML, Use Cases, Design Patterns
+
+      \item Recognized as an Employee First Leader based on 360 degree
+        feedback within HCL and listed in the top 10\% of all managers
+
+      \item Serving as the Subject Matter Expert (SME) for OOAD and
+        UML since 2008 at HCL
+
+      \item Awarded by the Talent Transformation Group (training
+        department at HCL) for imparting more than 250 hours of
+        training for over 500 members on OOAD with UML.
+
+      \item Served as SKO (Senior Knowledge Officer, HCL, Teradyne
+        IDC, Instrumentation Group)
+
+    \end{itemize}
+
+  \item{\textbf{Think Business Networks}}
+
+    \begin{itemize}
+      \setlength\itemsep{-0.5em}
+      \item Was part of the SEI CMM internal audit team 
+
+      \item Served as a member of the Quality Improvement Team 
+
+      \item Responsible for `Open Source Software' awareness which has
+        lead the organization to use both open source software as well
+        as to contribute to the movement
+
+      \item Served as the CTO, conducted many technology based team
+        activities within the organization to create awareness of KM
+        practices, reusability etc.
+
+      \item Developed, as a personal initiative, EzTest an automated
+        testing system to help us with recruitment activities. EzTest
+        was adopted by the organization and was commercialized,
+        targeting all universities, recruitment agencies, ITeS
+        industries, training institutes and schools. EzTest was
+        awarded the Quality Improvement Team's best corrective action
+        project for 2001
+        
+    \end{itemize}
+\end{itemize}
+
+\section*{Hobbies}
+
+\end{document}
