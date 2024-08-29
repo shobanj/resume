@@ -1,7 +1,7 @@
 \documentclass[a4paper,12pt]{article}
 
 \usepackage[utf8]{inputenc}
-\usepackage[margin=0.75in]{geometry}
+\usepackage[margin=0.5in]{geometry}
 \usepackage{lipsum}
 \usepackage{tabularx}
 \usepackage{caption}
@@ -21,6 +21,7 @@
 \definecolor{darkGreen}{HTML}{152614}
 \definecolor{teaGreen}{HTML}{dbf4ad}
 \newcommand\cvsecondarycolor{darkGreen}
+\newcommand\cvsecondarybackgroundcolor{teaGreen}
 
 \graphicspath{ {./images/} }
 
@@ -37,9 +38,7 @@
   \small {
     \faAt \quad \href{mailto:#1}{#1} \\
     \faPhone \quad \href{tel:#2}{#2} \\
-    {\href{https://www.linkedin.com/in/#3/}{\faLinkedin}}
-    {\href{https://github.com/#3}{\faGithub}}
-    {\href{https://#3.wordpress.com/}{\faWordpress}}
+    {\href{https://www.linkedin.com/in/#3/}{\faLinkedin \quad linkedin}}
   }
 }
 
@@ -55,9 +54,9 @@
 
 \newcommand\cvsubsection[3]{\subsection*{#1 \quad \small{(#2 \textendash #3)}}}
 \newcommand\cvprojectentry[5]{
-  \bf{#1}
+  \textbf{#1}
   
-  \normalfont{\it{Domain: #2}\normalfont{} \quad (#3 \textendash #4)}
+  \it{Domain: #2}\normalfont{} \quad (#3 \textendash #4)
   
 }
 
@@ -76,32 +75,31 @@
 \includegraphics[height=1.5\baselineskip]{agile}
 \includegraphics[height=1.5\baselineskip]{pmp}
 
-Have been with the IT industry since June '95 with over twenty nine years
-in architecting and managing multiple projects and functions in
-domains like printing, semiconductor, telecom, automation, industrial,
-and workflow in addition to focusing on the quality aspects of project
-development.
-
-\section*{Professional Experience}
-
-{
 \begin{wraptable}{r}{6cm}
   \caption*{Timeline}
   \begin{tabular}{l|p{4cm}}
     \hline
-    \cvte{2024}{Drove and achieved 150\% Value add and SixSigma initiative targets} \par \href{https://patents.justia.com/patent/20240281181}{20240281181} Patent Granted - Using Lidar To Define Printable Area For Document Printing \\
+    \cvte{2024}{Drove and achieved 150\% Value add and SixSigma initiative targets} \par \textbf{Patent Granted} \textendash \href{https://patents.justia.com/patent/20240281181}{Using LIDAR To Define Printable Area For Document Printing} \\
     \cvte{2023}{Developed \& showcased a hands free AR / AI based guidance system \par Key member of patent review board and improved selection rate by 70\% } \\
     \cvte{2022}{Devloped R / Python based  Knowledge Management Capability assessment and analysis tool - recognized as a SixSigma project} \\
     \cvte{2021}{Prototyped 3D / AR app - enabled winning an AR application dev contract} \\
-    \cvte{2020}{CMMI Associate - Took part in CMMI assessment and achieved Level 5 for group} \\
+    \cvte{2020}{\textbf{CMMI Appraisal Team Member (ATM)} - Took part in CMMI assessment and achieved Level 5 for group} \\
     \cvte{2017}{Poster presentation for TUG \textendash `Application of Big Data Analytics in the ATE domain'} \\
-    \cvte{2014}{SME for OOAD UML, Design Patterns \textendash Trained over 500 members (>250 hrs.) since 2008} \\
+    \cvte{2014}{SME for OOAD UML, Design Patterns, Requirements Management \textendash Trained over 500 members (>250 hrs.) since 2008} \\
     \cvte{2001}{ezTest prototyped as a personal initiative and became a line of business} \\
     \cvte{1998}{Developed a proxy server for shared internet browsing using Java used within org} \\
     \hline
   \end{tabular}
 \end{wraptable}
 
+{
+Have been with the IT industry since June '95 with over twenty nine years
+in architecting and managing multiple projects and functions in
+domains like printing, semiconductor, telecom, automation, industrial,
+and workflow.
+
+\section*{Professional Experience}
+  
 \cvsubsection{HCL Technologies, Chennai}{Dec 2002}{Till date}
 
 Extensively managed programs and technically contributed on the Office
@@ -124,7 +122,7 @@ candidates by 3 times}.
 Served as the lead for tracks spanning a total of 45 – 65 members
 covering development, sustenance and enhancement of printer drivers,
 content management system, logs aquisition \& analysis, LIDAR based AI
-AI model training and inference, AR / VR solution that used object and
+model training and inference, AR / VR solution that used object and
 state detection, enterprise / clould based print solutions,
 enhancements of a public print kiosk, a playstore equivalent for
 printers and associated QA activities.
@@ -136,8 +134,6 @@ by tracking targets and \textbf{achieved over 150\% of
 primary applicant for 3 ideas). In addition, I also guided teams on
 evaluating new concepts on emerging technologies such as AI / ML, AR
 (Hands free AR, Synthetic image generation), NLP etc.,
-
-}
 
 \cvprojectentry{ATE Instruments Program}{Semiconductors / ATE}{Jun 2017}{Dec 2018}
 
@@ -153,6 +149,8 @@ projects.
 We also started the \textbf{`instrument incubation program'} to scale
 up both new joiners and lateral hires to enable instrument development
 quicker both in terms of knowledge and enabling support tools.
+
+}
 
 \cvprojectentry{64 bit Migration}{Semiconductors / ATE}{Feb 2016}{Jun 2017}
 
@@ -513,43 +511,50 @@ framework, based on MS Test, an early version of Rational Visual Test.
     
     \begin{itemize}
       \setlength\itemsep{-0.5em}
-      \item Authored the paper `Application of Big Data Analytics in
-        the ATE domain' which was selected for poster presentation as
-        part of the ATE user meet up (2017)
-      \item Published a paper on `Big data analytics' in the internal
-        newsletter
 
-      \item Created proof of concept application on auto-test
-        regression analysis using the ELK (Elasticsearch, Logstash and
-        Kibana) stack which led to the focus of extending the same
-        within the group for different projects for analysis.
+    \item Published a papers on \textbf{`Big data analytics'},
+      \textbf{`Machine Learning'} for the internal newsletters, paper
+      presentation contest
 
-      \item Best project award (2) for execution and completion of
-        projects within the semi group (2016 – 2017)
+    \item Created proof of concept application on auto-test
+      regression analysis using the ELK (Elasticsearch, Logstash and
+      Kibana) stack which led to the focus of extending the same
+      within the group for different projects for analysis.
 
-      \item Awarded the HCL Goldline award (2) for a 5/5 Customer
-        Satisfaction rating and the successful completion of the CPDD
-        program (2012)
+    \item Best project award (4), Goldline award (2) for successful
+      execution and completion of projects.
+      
+    \item A paper on `Machine Learning' was shortlisted as part of
+      the internal paper presentation contest within the group
+      
+    \item Took up various additional roles
+      \begin{itemize}
+      \setlength\itemsep{-0.5em}
+        
+      \item Served as \textbf{SKO (Senior Knowledge Officer)} for a
+        semi group that I was a part of, promoting Knowledge
+        Management Practices by encouraging team to share knowledge to
+        our central repository.
 
-      \item A paper on `Machine Learning' was shortlisted as part of
-        the internal paper presentation contest within the group
+      \item \textbf{CMMI Appraisal Team Member} covering
+        \textbf{`Delivery \& Managing Services'} Capability area -
+        Practice Area: Service Delivery Management \& Strategic
+        Service Management for level 5 certification.
 
-      \item TechCeed Certified Trainer (HCL Training Department) for
-        OOAD / UML, Use Cases, Design Patterns
+      \item \textbf{Editor \& Publisher} for our quarterly Semi
+        newsletter distributed to both HCL and customer.
+        
+      \item \textbf{Six Sigma Semi SPOC} to monitor and drive the
+        achievements of our yearly targets for 3 years and had
+        exceeded the targets.
 
-      \item Recognized as an Employee First Leader based on 360 degree
-        feedback within HCL and listed in the top 10\% of all managers
+      \item \textbf{Patent Reviewer} to streamline and be the first
+        line of reviwing the parent applications by the team and
+        guiding them to represent their ideas better. Improved
+        selection rate next level by 70\%
 
-      \item Serving as the Subject Matter Expert (SME) for OOAD and
-        UML since 2008 at HCL
-
-      \item Awarded by the Talent Transformation Group (training
-        department at HCL) for imparting more than 250 hours of
-        training for over 500 members on OOAD with UML.
-
-      \item Served as SKO (Senior Knowledge Officer, HCL, Teradyne
-        IDC, Instrumentation Group)
-
+      \end{itemize}
+      
     \end{itemize}
 
   \item{\textbf{Think Business Networks}}
@@ -562,7 +567,7 @@ framework, based on MS Test, an early version of Rational Visual Test.
 
       \item Served as a member of the Quality Improvement Team 
 
-      \item Responsible for `Open Source Software' awareness which has
+      \item Responsible for `Open Source Software' awareness which 
         lead the organization to use both open source software as well
         as to contribute to the movement
 
@@ -587,17 +592,20 @@ framework, based on MS Test, an early version of Rational Visual Test.
   \setlength\itemsep{-0.5em}
 
 \item
-  \href{https://patents.justia.com/patent/20240281181}{20240281181} -
-  \textbf{Patent Granted} \textendash Using LIDAR To Define Printable Area For
-  Document Printing.
+  \textbf{Patent Granted} \textendash
+  \href{https://patents.justia.com/patent/20240281181}{Using LIDAR To
+    Define Printable Area For Document Printing.}
   
 \item
-  \href{https://patents.google.com/patent/US20230289515A1}{US20230289515A1}
-  \textbf{Patent Pending} \textendash Methods and systems for adding annotations
-  from a printed version of a document to a digital version of the
-  document
+  \textbf{Patent Pending} \textendash
+  \href{https://patents.google.com/patent/US20230289515A1}{Methods
+    and systems for adding annotations from a printed version of a
+    document to a digital version of the document}
 
-\item \href{https://patents.google.com/patent/US20190294385A1}{US20190294385A1} \textbf{Patent Published} \textendash Method and system for arranging and printing pages according to search criteria
+\item \textbf{Patent Published} \textendash
+  \href{https://patents.google.com/patent/US20190294385A1}{Method and
+    system for arranging and printing pages according to search
+    criteria}
   
 \item Article on `Database Abstraction using PHP', a web scripting
   language published in Developer IQ, September 2002 edition.
@@ -625,6 +633,14 @@ framework, based on MS Test, an early version of Rational Visual Test.
 
 \section*{Hobbies}
 
-\href{https://www.flickr.com/photos/shobanjayaraj/}{\faFlickr} Photography, Participating in \href{https://shoban.itch.io/}{\faItchIo} Game Jams, \href{https://www.goodreads.com/user/show/54087481-shoban-jayaraj}{\faGoodreads} reading, keeping up with the latest technological innovations.
+\centering{
+
+  \href{https://www.flickr.com/photos/shobanjayaraj/}{\faFlickr} Photography |
+  \href{https://shoban.itch.io/}{\faItchIo} Game Jams |
+  \href{https://www.goodreads.com/user/show/54087481-shoban-jayaraj}{\faGoodreads} Reading |
+  \href{https://github.com/shobanj}{\faGithub} Productivity App Development |
+  \href{https://shobanj.wordpress.com/}{\faWordpress} Blogging
+
+}
 
 \end{document}
