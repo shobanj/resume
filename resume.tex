@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,11pt]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[margin=0.7in]{geometry}
@@ -18,9 +18,11 @@
 
 \setmainfont{Garamond}
 
-\newcommand\cvaltcolor{olive}
 \definecolor{darkGreen}{HTML}{152614}
 \definecolor{teaGreen}{HTML}{dbf4ad}
+\definecolor{oliveGreen}{HTML}{808000}
+
+\newcommand\cvaltcolor{oliveGreen}
 \newcommand\cvsecondarycolor{darkGreen}
 \newcommand\cvsecondarybackgroundcolor{teaGreen}
 
@@ -34,7 +36,7 @@
 %% \pagecolor{teaGreen}
 \subsectionfont{\color{\cvsecondarycolor}}
 
-\newcommand\cvtitle[2]{\Huge{\bf{#1}} \Huge{#2}}
+\newcommand\cvtitle[2]{\color{darkGreen}{\Huge{\bf{#1}}} \Huge{#2}}
 \newcommand\cvcontact[3] {
   \small {
     \href{mailto:#1}{\faAt \quad #1} \\
@@ -75,21 +77,18 @@
 
 \cvhrule
 
-\includegraphics[height=1.5\baselineskip]{agile}
-\includegraphics[height=1.5\baselineskip]{pmp}
-
-\begin{wraptable}{r}{6cm}
+\begin{wraptable}{R}{6cm}
   \caption*{Timeline}
   \begin{tabular}{l|p{4cm}}
     \hline
-    \cvte{2024}{Drove and achieved 150\% Value add and SixSigma initiative targets} \par \textbf{Patent Granted} - \href{https://patents.justia.com/patent/20240281181}{Using LIDAR To Define Printable Area For Document Printing} \\
+	  \cvte{2024}{Achieved 150\% Value add and Six Sigma initiative targets} \par \textbf{Patent Granted} - \href{https://patents.justia.com/patent/12086483}{Using LIDAR To Define Printable Area For Document Printing} \\
     \cvte{2023}{Developed \& showcased a hands free AR / AI based guidance system \par Key member of patent review board and improved selection rate by 70\% } \\
-    \cvte{2022}{Devloped R / Python based  Knowledge Management Capability assessment and analysis tool - recognized as a SixSigma project} \\
+    \cvte{2022}{Devloped R / Python based  Knowledge Management Capability assessment and analysis tool - recognized as a Six Sigma project} \\
     \cvte{2021}{Prototyped 3D / AR app - enabled winning an AR application dev contract} \\
     \cvte{2020}{\textbf{CMMI Appraisal Team Member (ATM)} - Took part in CMMI assessment and achieved Level 5 for group} \\
     \cvte{2017}{Poster presentation for TUG - `Application of Big Data Analytics in the ATE domain'} \\
     \cvte{2014}{SME for OOAD UML, Design Patterns, Requirements Management - Trained over 500 members (>250 hrs.) since 2008} \\
-    \cvte{2011}{Gained confidence with client by building a UI mockup of the NUI application using Qt/QML over the weekend} \\
+    \cvte{2011}{UI mockup of the NUI application using Qt/QML over the weekend as a PoC} \\
     \cvte{2010}{PoC on production printer simulator frontend using Qt/C++ which kickstarted taking up the work} \\
     \cvte{2001}{ezTest prototyped as a personal initiative and became a line of business} \\
     \cvte{1998}{Developed a proxy server for shared internet browsing using Java adopted within org} \\
@@ -98,7 +97,9 @@
   \end{tabular}
 \end{wraptable}
 
-{
+\includegraphics[height=1.5\baselineskip]{agile}
+\includegraphics[height=1.5\baselineskip]{pmp}
+
 Have been with the IT industry since June '95 with over twenty nine years
 in architecting and managing multiple projects and functions in
 domains like printing, semiconductor, telecom, automation, industrial,
@@ -125,7 +126,7 @@ candidates by 3 times}.
 
 \cvprojectentry{Digital Software Solutions}{Office Automation}{Jun 2017}{Dec 2023}
 
-Served as the lead for tracks spanning a total of 45 – 65 members
+Served as the lead for tracks spanning a total of 45 - 65 members
 covering development, sustenance and enhancement of printer drivers,
 content management system, logs aquisition \& analysis, \textbf{LIDAR
   based AI model training and inference, AR / VR solution} that used
@@ -157,10 +158,6 @@ up both new joiners and lateral hires to enable instrument development
 quicker both in terms of knowledge and enabling support tools.
 
 
-}
-
-%% \begin{multicols}{2}
-
 \cvprojectentry{64 bit Migration}{Semiconductors / ATE}{Feb 2016}{Jun 2017}
 
 Served as the program manager interacting with the different groups at
@@ -185,6 +182,8 @@ different levels of sr. management on the progress and challenges. We
 had completed the program successfully 2 weeks ahead of schedule. This
 was recognized and \textbf{awarded as a best project executed at this
 scale} within the group.
+
+\begin{multicols}{2}
 
 \cvprojectentry{PCSW for configuration \& commissioning}{Industrial / Power Electronics}{Aug 2011}{Feb 2015}
 
@@ -280,7 +279,7 @@ award for successful completion of the program. Was appreciated by the
 client on my ideas and initiatives of creating reusable components,
 thus saving time in their future projects
  
-\cvprojectentry{HVD, HDVS and Microwave – Autotest Development and
+\cvprojectentry{HVD, HDVS and Microwave Autotest Development and
   Ownership}{Semiconductors / ATE}{September 2004}{September 2006}
 
 The High Voltage Digital, High Density Voltage Source and Microwave
@@ -506,12 +505,7 @@ HTML to be accessible over the net.
 I was also responsible for building the entire automated test
 framework, based on MS Test, an early version of Rational Visual Test.
 
-%% \end{multicols}
-
-\section*{Education}
-
-\cveducation{M.S.}{Software Systems}{BITS Pilani}{CGPA 7.94}
-\cveducation{B.E.}{Computer Science}{Barathiar University}{74.77\%}
+\end{multicols}
 
 \section*{Other Achievements}
 
@@ -592,6 +586,8 @@ framework, based on MS Test, an early version of Rational Visual Test.
     \end{itemize}
 \end{itemize}
 
+\begin{multicols}{2}
+
 \section*{Patents \& Publications}
 
 \begin{itemize}
@@ -599,7 +595,7 @@ framework, based on MS Test, an early version of Rational Visual Test.
 
 \item
   \textbf{Patent Granted} -
-  \href{https://patents.justia.com/patent/20240281181}{Using LIDAR To
+  \href{https://patents.justia.com/patent/12086483}{Using LIDAR To
     Define Printable Area For Document Printing.}
   
 \item
@@ -637,11 +633,18 @@ framework, based on MS Test, an early version of Rational Visual Test.
 \item
   \href{https://www.coursera.org/account/accomplishments/verify/2YVCNYET6XSL}{Machine Learning (Stanford University, 2018)}
 
-\item BEC (Business English Certified) Level 2 (University of Cambridge, 2000)
+\item BEC (Business English Certification) Level 2 (University of Cambridge, 2000)
   
 \item Sun Certified Java 2 Programmer (Sun Microsystems, 1999)
   
 \end{itemize}
+
+\section*{Education}
+
+\cveducation{M.S.}{Software Systems}{BITS Pilani}{CGPA 7.94}
+\cveducation{B.E.}{Computer Science}{Barathiar University}{74.77\%}
+
+\end{multicols}
 
 \section*{Hobbies}
 
