@@ -1,0 +1,31 @@
+name: Build PDF
+
+on:
+  push:
+    paths:
+      - '**/*.tex'
+
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: List contents of the workspace
+        run: ls -la ${{ github.workspace }}
+
+      - name: Build using Makefile
+        run: |
+          docker run --rm -v ${{ github.workspace }}:/workspace -w /workspace shobanj/ubuntu-xelatex:latest sh -c "make all"
+
+      - name: Upload Output
+        uses: actions/upload-artifact@v4
+        with:
+          name: out.zip  # Name of the artifact in the GitHub interface
+          path: out.zip  # Path to the file on the runner
+          if-no-files: error  # Optional: Error if no files are found
+          retention-days: 30  # Optional: Number of days to keep the artifact
