@@ -7,7 +7,7 @@ all: pdf
 
 pdf: $(MAIN).pdf
 
-$(MAIN).pdf: *.tex book.sty
+$(MAIN).pdf: $(MAIN).tex
 	xelatex -interaction=nonstopmode $(MAIN).tex
 	xelatex -interaction=nonstopmode $(MAIN).tex
 	xelatex -interaction=nonstopmode $(MAIN).tex
